@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+/* sub common */
+.sub_area {padding: 0 14%;}
+.sub_tit {position: relative; font-family: 'Chosunilbo_myungjo'; padding-top: 140px; margin-bottom: 80px;}
+.sub_tit h3 {display: inline-block; height: 60px; line-height: 60px; font-size: 1.4rem; font-weight: 600; background: no-repeat center center; margin-bottom: 30px; opacity: 0;}
+.sub_tit.gr h3 {background-image: url(../sub/images/sub_tit_bgg.png);}
+.sub_tit.pi h3 {background-image: url(../sub/images/sub_tit_bgp.png);}
+.sub_tit.ye h3 {background-image: url(../sub/images/sub_tit_bg.png); background-position:  right center;}
+.sub_tit p {font-size: 2.2rem; color: #c4c4c4; line-height: 1.4; opacity: 0;}
+.sub_tit:before {content: ''; position: absolute; top: 0; left: 50%; transform: translate(-50%,0); background: #e5e5e5; width: 1px; height: 0;}
+
+.waypoint.on .sub_tit:before {height: 140px;}
+.waypoint.on .sub_tit h3 {opacity: 1; transition-delay: 0.6s;}
+.waypoint.on .sub_tit p {opacity: 1; transition-delay: 1s;}
+
+.sub_tit:before, .sub_tit h3 {transition: all 0.6s;}
+.sub_tit p {transition: all 1s;}
+
+
+
+.sub_tap .tablist {display: inline-block; margin-bottom: 100px; padding: 0 60px; text-align: center; border: 1px solid #eee;}
+.sub_tap .tablist li {display: inline-block; color: #aaa; padding: 20px 40px; cursor: pointer;}
+.sub_tap .tablist li.active {color: #181818;}
+
+.sub_tap .tabpanel {display: none;}
+.sub_tap .tabpanel.active {display: block;}
+
+
+/* subTit */
+#subTit {position: relative; height: 755px; padding-top: 300px; background: url(../sub/images/sub1_titbg.jpg) no-repeat center center; font-family: 'Chosunilbo_myungjo'; font-size: 2.2rem; color: #fff;}
+#subTit span {display: block; color: #dcdcdc; padding-bottom: 30px;}
+#subTit span strong {font-size: 2.7rem;}
+#subTit h2 {font-weight: 600;}
+
+#subTit .deco {position: absolute;}
+#subTit .deco1 {left: 24%; bottom: 100px; animation: deco1 4s infinite;}
+#subTit .deco2 {left: 18%; bottom: 100px; animation: deco2 6s infinite;}
+
+#topLnb {width: 100%; background: #fff; border-bottom: 1px solid #eee; text-align: center;}
+#topLnb li {font-size: 1.1rem; display: inline-block; padding: 1em 1em; margin: 0 16px; color: #aaa;}
+#topLnb li.on {color: #000; border-bottom: 1px solid #bfd45d;}
+
+
+/* greeting */
+#greeting {position: relative; background: url(../sub/images/chechbg.jpg); padding-bottom: 140px;}
+#greeting .txt_area {width: 47%; color: #252525; font-size: 0.95rem;}
+#greeting .txt_area p {font-weight: 300; line-height: 1.8; margin-bottom: 30px;}
+#greeting .txt_area p strong {display: inlin-block; font-weight: 400; color: #000;}
+
+#greeting .txt_area .from {font-weight: 400; font-size: 1.1rem; margin-top: 80px;}
+
+#greeting .hand {position: absolute; right: 0; bottom: -240px;}
+
+
+
+/* teacher */
+#teacher {background-image: linear-gradient(to bottom, #fff 0%, #f6f6f6 100%);}
+
+#teachTab .tabpanel > ul:after, #teachTab .tabpanel > ul > li:after {content: ''; display: block; clear: both;}
+#teachTab .tabpanel > ul > li {float: left; width: 50%; height: 620px; text-align: left;}
+
+#teachTab .tabpanel .profile, #teachTab .tabpanel .history {float: left;}
+#teachTab .tabpanel .profile {margin-right: 40px; text-align: center;}
+#teachTab .tabpanel .profile p {margin-top: 24px;}
+#teachTab .tabpanel .history {font-size: 0.85rem; margin-top: 20px}
+#teachTab .tabpanel .history li + li {margin-top: 16px;}
+
+
+/* facility */
+.interiorView {width: 1244px; height: 868px; background: url(../sub/images/facility_bg.png) no-repeat center top; padding-top: 180px;}
+.swiper-slide p {margin-top: 30px;}
+
+
+
+/* map */
+#map {position: relative; padding-top: 300px; height: 1042px; background: url(../sub/images/map_bg.jpg) no-repeat left bottom/ contain;}
+
+#map .sub_tit {margin-top: -200px; padding-top: 0; margin-bottom: 0;}
+#map .sub_tit p {margin-bottom: 160px;}
+#map .sub_tit h3 {padding: 0 20px; color: #fff;}
+#map .sub_tit h3 span {color: #000;}
+#map .sub_tit.ye h3 {background-position: right center;}
+#map .sub_tit:before {top: 36%;}
+
+#map.waypoint.on .sub_tit:before {transition-delay: 0.6s;}
+#map.waypoint.on .sub_tit h3 {transition-delay: 1s;}
+#map.waypoint.on .sub_tit p {transition-delay: 0s;}
+
+#map .txt_area {position: absolute; top: calc(50% + 150px); left: 50%; transform: translate(-50%,-50%);}
+#map .txt_area p {font-size: 1.1rem; padding-bottom: 60px;}
+#map .txt_area .more {font-size: 1.2rem; font-weight: 600; border: 1px solid #fff; padding: 0.8em 2em; transition: all 0.4s;}
+#map .txt_area .more:hover {background: #fff; color: #000;}
