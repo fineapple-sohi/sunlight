@@ -49,9 +49,9 @@ $(document).ready(function(){
     var interiorThumb1 = new Swiper('.interiorThumb1', {
         spaceBetween: 4,
         slidesPerView: 4,
-        autoplay: {
-            delay: 3000,
-        },
+        // autoplay: {
+        //     delay: 4000,
+        // },
         loop: true,
         freeMode: true,
         loopedSlides: 4,
@@ -65,10 +65,12 @@ $(document).ready(function(){
             nextEl: '.ctrls2.next',
             prevEl: '.ctrls2.prev',
         },
-        autoplay: {
-            delay: 3000,
-        },
+        // autoplay: {
+        //     delay: 4000,
+        // },
         loop: true,
+        speed: 700,
+        effect: 'fade',
         loopedSlides: 5,
         slideDuplicateActiveClass: 'swiper-slide-active',
         thumbs: {

@@ -68,13 +68,14 @@
 
 
 /* facility */
-.interiorView {width: 1244px; height: 868px; background: url(../sub/images/facility_bg.png) no-repeat center top; padding-top: 180px;}
-.swiper-slide p {margin-top: 30px;}
+.interiorView {width: 996px; height: 694px; background: url(../sub/images/facility_bg.png) no-repeat center top / cover; padding-top: 100px;}
+.interiorView img {width: 80%;}
+.swiper-slide p {background: #fff; width: 80%; margin: 30px auto 0;}
 
 
 
 /* map */
-#map {position: relative; padding-top: 300px; height: 1042px; background: url(../sub/images/map_bg.jpg) no-repeat left bottom/ contain;}
+#map {position: relative; padding-top: 300px; height: 1042px;}
 
 #map .sub_tit {margin-top: -200px; padding-top: 0; margin-bottom: 0;}
 #map .sub_tit p {margin-bottom: 160px;}
@@ -86,6 +87,8 @@
 #map.waypoint.on .sub_tit:before {transition-delay: 0.6s;}
 #map.waypoint.on .sub_tit h3 {transition-delay: 1s;}
 #map.waypoint.on .sub_tit p {transition-delay: 0s;}
+
+#map .fixd_bg {position: absolute; left: 0; bottom: 0; width: 100%; height: 742px; background: url(../sub/images/map_bg0.jpg) no-repeat center bottom/ cover fixed; z-index: -1;}
 
 #map .txt_area {position: absolute; top: calc(50% + 150px); left: 50%; transform: translate(-50%,-50%);}
 #map .txt_area p {font-size: 1.1rem; padding-bottom: 60px;}
