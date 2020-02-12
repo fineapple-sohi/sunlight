@@ -16,6 +16,14 @@ $(document).ready(function(){
 		sectTop.push(ost);
     }
 
+    var $moveTxt = $('.movetxt');
+    if($moveTxt.length) {
+        var $set1 = $('#introduce').offset().top;
+        var $set2 = $('#program').offset().top;
+        var $set3 = $('#special').offset().top;
+    }
+
+    
 	
 	//스크롤을 할때마다 배열들안의 값들을 체크합니다.
 	function chkSct(st){
@@ -58,13 +66,13 @@ $(document).ready(function(){
 
 
         /* moving txt */
-        if(st > $('#introduce').offset().top && st < $('#special').offset().top) {
+        if(st > $set1 && st < $set3) {
             $('#program .movetxt.movetxt1').addClass('on');
         } else {
             $('#program .movetxt.movetxt1').removeClass('on');
         }
 
-        if(st > $('#program').offset().top && st < $('#special').offset().top + 500) {
+        if(st > $set2 && st < $set3 + 500) {
             $('#program .movetxt.movetxt2').addClass('on');
         } else {
             $('#program .movetxt.movetxt2').removeClass('on');
