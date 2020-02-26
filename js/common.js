@@ -39,7 +39,7 @@ $(document).ready(function(){
                 $(this[0,'element']).removeClass('on');
             }
         }, {
-            offset: '60%'
+            offset: '70%'
         });
     });
 

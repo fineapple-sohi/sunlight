@@ -76,7 +76,7 @@
 }
 
 #introduce .txt_area {float: right; width: 50%;}
-#introduce .txt_area h2 {font-size: 2em; margin: 108px 0 54px;}
+#introduce .txt_area h2 {font-size: 2rem; margin: 108px 0 54px;}
 #introduce .txt_area p {line-height: 2;}
 #introduce .txt_area p + p {margin-top: 1.2em;}
 #introduce .more {float: right; margin: 90px 40% 0 0;}
@@ -94,20 +94,17 @@
 
 #program .care:hover, #program .test:hover {background-size: 110%;}
 
-#program span {background: #fff; padding: 0.6em 1.4em; border-radius: 2em; font-weight: 600;}
+#program span {background: #fff; padding: 0.6em 1.4em; border-radius: 2em; font-size: 1.2em; font-weight: 600;}
 #program .care span {color: #f2b41d;}
 #program .test span {color: #9eb333;}
 
 #program h2 {margin: 0.4em 0 1.1em;}
 
-#program .movetxt {position: absolute; transition: all 4s ease-out;}
-#program .movetxt.movetxt1 {top: 0; right: 0; transform: translate(30%,-100%); opacity: 0;}
-#program .movetxt.movetxt2 {bottom: 0; left: 0; transform: translate(-30%,100%); opacity: 0;}
-
-#program .movetxt.movetxt1.on {transform: translate(0,-100%); opacity: 0.5;}
-#program .movetxt.movetxt2.on {transform: translate(0,100%); opacity: 0.5;}
-
-
+.movetxt {position: absolute; transition: all 4s ease-out;}
+.movetxt.movetxt1 {top: 0; right: 0; transform: translate(30%,-100%); opacity: 0;}
+.movetxt.movetxt2 {bottom: 0; left: 0; transform: translate(-30%,100%); opacity: 0;}
+.movetxt.movetxt1.on {transform: translate(0,-100%); opacity: 0.5;}
+.movetxt.movetxt2.on {transform: translate(0,100%); opacity: 0.5;}
 
 
 /* special */
@@ -150,7 +147,7 @@
 
 
 /* btmBanner */
-#btmBanner {position: relative; height: 825px; padding: 14% 0 0 360px; line-height: 1.5; background-size: 120%; overflow: hidden;}
+#btmBanner {position: relative; height: 825px; padding: 14% 0 0 20%; line-height: 1.5; background-size: 120%; overflow: hidden;}
 
 #btmBanner img {position: absolute; width: 1920px; height: 825px; max-width: 1920px; top: 50%; left: 50%; transform: translate(-50%,-50%) scale(1.15); z-index: -1; transition: transform 4s ease-out;}
 #btmBanner.on img {transform: translate(-50%,-50%) scale(1);}

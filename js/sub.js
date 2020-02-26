@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-
     /* tab */
     $(".tab:first-of-type, .tabpanel:first-of-type").addClass("active").attr("tabIndex", 0);
     $(".tab:first-of-type").attr("aria-selected", true);
@@ -43,70 +42,75 @@ $(document).ready(function(){
     }
 
 
-
-
     /* interior slide */
-    var interiorThumb1 = new Swiper('.interiorThumb1', {
-        spaceBetween: 4,
-        slidesPerView: 4,
-        // autoplay: {
-        //     delay: 4000,
-        // },
-        loop: true,
-        freeMode: true,
-        loopedSlides: 4,
-        watchSlidesVisibility: true,
-        watchSlidesProgress: true,
-        slideDuplicateActiveClass: 'swiper-slide-active'
-    });
-    var interiorView1 = new Swiper('.interiorView1', {
-        slidesPerView: 1,
+    var interiorSwiper1 = new Swiper('.interiorView1', {
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+                // return '<span class="' + className + '">' + (index + 1) + '</span>';
+                return '<span class="' + className + '"><img src="images/place/thumb_hg0' + (index + 1) + '.jpg" alt=""></span>';
+            },
+        },
         navigation: {
-            nextEl: '.ctrls2.next',
-            prevEl: '.ctrls2.prev',
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
-        // autoplay: {
-        //     delay: 4000,
-        // },
+        speed: 800,
+        autoplay: {
+            delay: 2000,
+          },
         loop: true,
-        speed: 700,
         effect: 'fade',
-        loopedSlides: 5,
-        slideDuplicateActiveClass: 'swiper-slide-active',
-        thumbs: {
-            swiper: interiorThumb1,
-        },
+
+        observer: true,
+        observeParents: true,
+        
     });
 
-    var interiorThumb2 = new Swiper('.interiorThumb2', {
-        spaceBetween: 4,
-        slidesPerView: 4,
-        autoplay: {
-            delay: 3000,
+    var interiorSwiper2 = new Swiper('.interiorView2', {
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+                // return '<span class="' + className + '">' + (index + 1) + '</span>';
+                return '<span class="' + className + '"><img src="images/place/thumb_mg0' + (index + 1) + '.jpg" alt=""></span>';
+            },
         },
-        loop: true,
-        freeMode: true,
-        loopedSlides: 4,
-        watchSlidesVisibility: true,
-        watchSlidesProgress: true,
-        slideDuplicateActiveClass: 'swiper-slide-active'
-    });
-    var interiorView2 = new Swiper('.interiorView2', {
-        slidesPerView: 1,
         navigation: {
-            nextEl: '.ctrls2.next',
-            prevEl: '.ctrls2.prev',
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
+        speed: 800,
         autoplay: {
-            delay: 3000,
-        },
+            delay: 2000,
+          },
         loop: true,
-        loopedSlides: 5,
-        slideDuplicateActiveClass: 'swiper-slide-active',
-        thumbs: {
-            swiper: interiorThumb2,
-        },
+        effect: 'fade',
+        
+        observer: true,
+        observeParents: true,
     });
+
+
+
+
+    /* lnb_list */
+    var $lnbList = $('#topLnb .lnb_list li');
+    var $lnbCnt = $('.lnb_cnt article');
+
+    $lnbList.eq(0).addClass('on');
+    $lnbCnt.eq(0).show().siblings().hide();
+
+    $lnbList.on('click', function(){
+        var lnbidx = $(this).index();
+
+        $(this).addClass('on').siblings().removeClass('on');
+        $lnbCnt.eq(lnbidx).show().siblings().hide();
+        
+    });
+
+
 
 
 

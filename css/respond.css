@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+@media screen and (max-width: 1760px) {
+    #faciTab .interiorView {padding-top: 80px;}
+}
+
+@media screen and (max-width: 1440px) {
+    html {font-size: 16px;}
+
+    #header #gnb {right: 100px;}
+    #header .branch {margin-left: 1em;}
+
+    #faciTab .interiorView {padding-top: 70px;}
+    #faciTab .interiorView .swiper-slide p {margin: 1.0em auto 0;}
+}
+
+@media screen and (max-width: 1280px) {
+    .h_area {padding: 0 1em;}
+
+}

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/respond.css">
 
     <!--[if lt IE 9]>
       <script type="text/javascript" src="js/html5shiv.min.js"></script>
@@ -35,22 +36,23 @@
     <!-- //skip -->
 
     <header id="header">
-        <div class="h_area f_jeju fc_w">
-            <h1 class="logo"><a href=""><img src="images/h_logo.png" alt="해빛아동청소년발단센터"></a></h1>
+        <div class="h_area f_jeju fc_w clear">
+            <h1 class="logo"><a href="../index.html"><img src="images/h_logo.png" alt="해빛아동청소년발단센터"></a></h1>
             <div class="branch df">
-                <a class="hb_g" href="">화곡점</a>
-                <a class="hb_y" href="">마곡점</a>
+                <a class="hb_g" href="sub1.html#facility">화곡점</a>
+                <a class="hb_y" href="sub1.html#facility">마곡점</a>
             </div>
             <nav id="gnb">
                 <ul class="df">
-                    <li><a href="">해빛소개</a></li>
-                    <li><a href="">전문가소개</a></li>
-                    <li><a href="">치료프로그램</a></li>
-                    <li><a href="">검사프로그램</a></li>
-                    <li><a href="">아동청소년상담</a></li>
-                    <li><a href="">상담절차&amp;예약</a></li>
+                    <li><a href="sub1.html">해빛소개</a></li>
+                    <li><a href="sub2.html">영유아발달상담</a></li>
+                    <li><a href="sub3.html">아동청소년상담</a></li>
+                    <li><a href="sub4.html">치료프로그램</a></li>
+                    <li><a href="sub5.html">검사프로그램</a></li>
+                    <li><a href="sub6.html">상담절차&amp;예약</a></li>
                 </ul>
             </nav>
+            <a class="blogN" href="https://blog.naver.com/haebit1175" target="_blank"><span class="blind">해빛아동청소년발달센터 네이버블로그 바로가기</span></a>
         </div>
     </header>
     <!-- //header -->
@@ -61,7 +63,7 @@
     </div>
     <!-- //quick -->
 
-    <main id="main">
+    <main id="main" class="sub01">
         <div class="area">
             <div id="lnb" class="fc_w">
                 <ul>
@@ -80,19 +82,19 @@
                 <img class="deco deco2" src="images/sub1_titdeco2.png" alt="">
             </section>
 
-            <section id="topLnb">
+            <div id="topLnb">
                 <ul>
                     <li class="on"><a href="#greeting">인사말</a></li>
                     <li><a href="#teacher">전문가소개</a></li>
                     <li><a href="#facility">둘러보기</a></li>
                     <li><a href="#map">오시는길</a></li>
                 </ul>
-            </section>
+            </div>
             <!-- //topLnb -->
 
             <section id="greeting" class="sect">
-                <div class="sub_area clear waypoint">
-                    <div class="sub_tit ye tc">
+                <div class="sub1_area clear waypoint">
+                    <div class="sub1_tit ye tc">
                         <h3>해빛 인사말</h3>
                         <p>아이들이 마음껏 자신을 표현할 수 있는<br>편안한 공간이 되기를 &middot;&middot;&middot;</p>
                     </div>
@@ -140,8 +142,8 @@
             <!-- //greeting -->
 
             <section id="teacher" class="sect">
-                <div class="sub_area waypoint">
-                    <div class="sub_tit gr tc">
+                <div class="sub1_area waypoint">
+                    <div class="sub1_tit gr tc">
                         <h3>해빛 전문가 소개</h3>
                         <p>우리아이, 아무에게나 맡길 수 없죠<em>!</em></p>
                     </div>
@@ -149,10 +151,12 @@
                         <ul class="tablist clear" role="tablist" aria-label="전문가 소개">
                             <li id="tab11" class="tab first" role="tab" aria-controls="tabpanel11">놀이치료</li>
                             <li id="tab12" class="tab" role="tab" aria-controls="tabpanel12">언어치료</li>
-                            <li id="tab13" class="tab" role="tab" aria-controls="tabpanel13">감각통합</li>
-                            <li id="tab14" class="tab" role="tab" aria-controls="tabpanel14">임상심리사</li>
-                            <li id="tab15" class="tab" role="tab" aria-controls="tabpanel15">성인&middot;가족상담</li>
-                            <li id="tab16" class="tab last" role="tab" aria-controls="tabpanel16">인지치료</li>
+                            <li id="tab13" class="tab" role="tab" aria-controls="tabpanel13">미술치료</li>
+                            <li id="tab14" class="tab" role="tab" aria-controls="tabpanel14">감각통합</li>
+                            <li id="tab15" class="tab" role="tab" aria-controls="tabpanel15">특수체육</li>
+                            <li id="tab16" class="tab" role="tab" aria-controls="tabpanel16">인지치료</li>
+                            <li id="tab17" class="tab" role="tab" aria-controls="tabpanel17">성인&middot;가족상담</li>
+                            <li id="tab18" class="tab last" role="tab" aria-controls="tabpanel18">임상심리</li>
                         </ul>
                         <div id="teachTabcnt" class="tabcontents">
                             <div id="tabpanel11" class="tabpanel" role="tabpanel" aria-labelledby="tab11">
@@ -184,55 +188,128 @@
                                     <li>
                                         <div class="profile">
                                             <img src="images/teacher/nori02.png" alt="">
-                                            <p>언어치료 원장 김드롱</p>
+                                            <p>놀이치료 김유진 선생님</p>
                                         </div>
                                         <ul class="history">
-                                            <li>명지대학교 사회교육대학원 언어치료학과 석사졸업</li>
-                                            <li>동신대학교 언어치료학과 학사 졸업</li>
-                                            <li>전) 연세말언어인지연구소 연구원(2008~2009)</li>
-                                            <li>열린맘 아동청소년 상담센터(2009~2015)</li>
-                                            <li>상원여자중학교 특수학급 언어치료사</li>
-                                            <li>소중한아이정신과 언어치료사</li>
-                                            <li>연세대학교 재활학교 언어치료 강사(2011-2017)</li>
-                                            <li>1급 언어재활사(보건복지부령 국가자격증)</li>
-                                            <li>한국 언어재활사협회 정회원</li>
-        
+                                            <li>&lt;학력&gt;</li>
+                                            <li>인하대학교 아동학 전공</li>
+                                            <li>명지대학교 일반대학원</li>
+                                            <li>아동학, 아동가족심리치료전공(석사졸업)</li>
+                                            <li>&lt;경력&gt;</li>
+                                            <li>명지대학교 아동가족심리치료센터</li>
+                                            <li>수정아동상담센터</li>
+                                            <li>세음심리발달연구소</li>
+                                            <li>아이앤아이소아정신과의원</li>
+                                            <li>허그맘허그인 성북센터</li>
+                                            <li>&lt;자격&gt;</li>
+                                            <li>청소년상담사 3급</li>
+                                            <li>아동상담사 2급</li>
+                                            <li>보육교사 2급</li>
                                         </ul>
                                     </li>
                                     <li>
                                         <div class="profile">
                                             <img src="images/teacher/nori03.png" alt="">
-                                            <p>언어치료 원장 김드롱</p>
+                                            <p>놀이치료 조한솔 선생님</p>
                                         </div>
                                         <ul class="history">
-                                            <li>명지대학교 사회교육대학원 언어치료학과 석사졸업</li>
-                                            <li>동신대학교 언어치료학과 학사 졸업</li>
-                                            <li>전) 연세말언어인지연구소 연구원(2008~2009)</li>
-                                            <li>열린맘 아동청소년 상담센터(2009~2015)</li>
-                                            <li>상원여자중학교 특수학급 언어치료사</li>
-                                            <li>소중한아이정신과 언어치료사</li>
-                                            <li>연세대학교 재활학교 언어치료 강사(2011-2017)</li>
-                                            <li>1급 언어재활사(보건복지부령 국가자격증)</li>
-                                            <li>한국 언어재활사협회 정회원</li>
-        
+                                            <li>&lt;학력&gt;</li>
+                                            <li>명지대학교 일반대학원 아동학과</li>
+                                            <li>아동가족심리치료 전공 (박사과정)</li>
+                                            <li>명지대학교 일반대학원 아동학과</li>
+                                            <li>아동가족심리치료전공 (석사 졸업)</li>
+                                            <li>명지대학교 사회과학대학 아동학 학사</li>
+                                            <li>&lt;경력&gt;</li>
+                                            <li>국제아동발달클리닉 놀이치료사</li>
+                                            <li>국립국악원 유아누리 전문강사</li>
+                                            <li>명지대 아동가족심리치료 연구소 연구원</li>
+                                            <li>&lt;자격&gt;</li>
+                                            <li>아동상담사 2급</li>
+                                            <li>유치원 정교사 2급</li>
+                                            <li>청소년상담사 2급</li>
+                                            <li>보육교사 2급</li>
+                                            <li>임상심리사 2급 (한국산업인력공단)</li>
                                         </ul>
                                     </li>
                                     <li>
                                         <div class="profile">
                                             <img src="images/teacher/nori04.png" alt="">
-                                            <p>언어치료 원장 김드롱</p>
+                                            <p>놀이치료 방정원 선생님</p>
                                         </div>
                                         <ul class="history">
-                                            <li>명지대학교 사회교육대학원 언어치료학과 석사졸업</li>
-                                            <li>동신대학교 언어치료학과 학사 졸업</li>
-                                            <li>전) 연세말언어인지연구소 연구원(2008~2009)</li>
-                                            <li>열린맘 아동청소년 상담센터(2009~2015)</li>
-                                            <li>상원여자중학교 특수학급 언어치료사</li>
-                                            <li>소중한아이정신과 언어치료사</li>
-                                            <li>연세대학교 재활학교 언어치료 강사(2011-2017)</li>
-                                            <li>1급 언어재활사(보건복지부령 국가자격증)</li>
-                                            <li>한국 언어재활사협회 정회원</li>
-        
+                                            <li>&lt;학력&gt;</li>
+                                            <li>덕성여자대학교 심리학과, 미술사학과 졸업</li>
+                                            <li>덕성여자대학교 일반대학원 심리학과 졸업</li>
+                                            <li>(발달 및 발달장애 전공)</li>
+                                            <li>&lt;경력&gt;</li>
+                                            <li>열린맘 아동발달센터 놀이치료사</li>
+                                            <li>김포 마인드인상담센터 임상심리사</li>
+                                            <li>공릉 연아혜움아동발달센터 놀이치료사</li>
+                                            <li>&lt;자격&gt;</li>
+                                            <li>청소년상담사 3급(보건복지가족부)</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="profile">
+                                            <img src="images/teacher/nori05.png" alt="">
+                                            <p>놀이치료 김은주 선생님</p>
+                                        </div>
+                                        <ul class="history">
+                                            <li>&lt;학력&gt;</li>
+                                            <li>명지대학교 사회교육대학원 예술치료학과 졸업</li>
+                                            <li>서울디지털대학교 상담심리학과 졸업</li>
+                                            <li>&lt;경력&gt;</li>
+                                            <li>동작종합사회복지관</li>
+                                            <li>목동아동발달센터</li>
+                                            <li>이화언어심리연구소</li>
+                                            <li>&lt;자격&gt;</li>
+                                            <li>가족상담사 (국제지식인력개발원)</li>
+                                            <li>아동미술치료사 (숙명여대평생교육원)</li>
+                                            <li>놀이치료사 1급 (한국심리치료사협회)</li>
+                                            <li>표현예술심리치료2급 (표현예술심리치료협회)</li>
+                                            <li>전문예술심리치료사 (명지대학교)</li>
+                                            <li>SDU상담사 2급 (서울디지털대학교)</li>
+                                            <li>유치원 2급 정교사 교원 자격증 (안양과학대학)</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="profile">
+                                            <img src="images/teacher/nori06.png" alt="">
+                                            <p>놀이치료 서정원 선생님</p>
+                                        </div>
+                                        <ul class="history">
+                                            <li>&lt;학력&gt;</li>
+                                            <li>덕성여자대학교 심리학과, 미술사학과 졸업</li>
+                                            <li>덕성여자대학교 일반대학원 심리학과 졸업</li>
+                                            <li>(발달 및 발달장애 전공)</li>
+                                            <li>&lt;경력&gt;</li>
+                                            <li>열린맘 아동발달센터 놀이치료사</li>
+                                            <li>김포 마인드인상담센터 임상심리사</li>
+                                            <li>공릉 연아혜움아동발달센터 놀이치료사</li>
+                                            <li>&lt;자격&gt;</li>
+                                            <li>청소년상담사 3급(보건복지가족부)</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="profile">
+                                            <img src="images/teacher/nori07.png" alt="">
+                                            <p>놀이치료 유호인 선생님</p>
+                                        </div>
+                                        <ul class="history">
+                                            <li>&lt;학력&gt;</li>
+                                            <li>한신대학교 재활학과 학사</li>
+                                            <li>한신대학원 재활학과 놀이치료 및 심리상담 석사졸업</li>
+                                            <li>&lt;경력&gt;</li>
+                                            <li>현) 나디브심리치료센터</li>
+                                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;동그라미아동심리상담센터</li>
+                                            <li>전) 허그맘</li>
+                                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;세원영유아아동상담센터</li>
+                                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;여성비젼센터 가족愛돌봄나눔터</li>
+                                            <li></li>
+                                            <li>&lt;자격&gt;</li>
+                                            <li>놀이심리상담사 2급</li>
+                                            <li>청소년상담사 3급</li>
+                                            <li>보육교사 2급</li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -241,26 +318,136 @@
                                 <ul>
                                     <li>
                                         <div class="profile">
-                                            <img src="images/teacher/nori01.png" alt="">
-                                            <p>놀이치료 원장 이유리</p>
+                                            <img src="images/teacher/lang01.png" alt="">
+                                            <p>언어치료 원장 김드롱</p>
                                         </div>
                                         <ul class="history">
-                                            <li>명지대학교 일반대학원 아동학과(아동심리치료전공) 석사 졸업</li>
-                                            <li> 명지대학교 일반대학원 아동가족심리치료 박사 졸업</li>
-                                            <li>현) 명지대학교 (방목교양)객원교수</li>
-                                            <li>명지대학교 교육대학원 유아교육과 객원교수</li>
-                                            <li>명지전문대 사회복지학과 외래교수</li>
-                                            <li>와이제이평생교육원 교수</li>
-                                            <li>전) 김태우심리언어센터 임상심리사</li>
-                                            <li>신도림아동발달센터 놀이치료사</li>
-                                            <li>고양아동청소년 정신건강센터 집단상담사</li>
-                                            <li>청소년 근로복지센터 학교폭력, 근로, 진로예방 강사</li>
-                                            <li>양천 아이존/열린맘 아동청소년 상담센터 놀이치료사</li>
-                                            <li>전문상담사 2급(한국상담학회)</li>
-                                            <li>임상심리사 2급(산업인력공단)</li>
-                                            <li>보육교사 1급(보건복지부)</li>
-                                            <li>가정복지사 2급</li>
-                                            <li>치료놀이 초,중 고급 수료</li>    
+                                            <li>명지대학교 사회교육대학원 언어치료학과 석사졸업</li>
+                                            <li>동신대학교 언어치료학과 학사 졸업</li>
+                                            <li>전) 연세말언어인지연구소 연구원(2008~2009)</li>
+                                            <li>열린맘 아동청소년 상담센터(2009~2015)</li>
+                                            <li>상원여자중학교 특수학급 언어치료사</li>
+                                            <li>소중한아이정신과 언어치료사</li>
+                                            <li>연세대학교 재활학교 언어치료 강사(2011-2017)</li>
+                                            <li>1급 언어재활사(보건복지부령 국가자격증)</li>
+                                            <li>한국 언어재활사협회 정회원</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="profile">
+                                            <img src="images/teacher/lang02.png" alt="">
+                                            <p>언어치료 김란영 선생님</p>
+                                        </div>
+                                        <ul class="history">
+                                            <li>&lt;학력&gt;</li>
+                                            <li>한림대학교 보건대학원 언어병리학과 석사 졸업</li>
+                                            <li>우송대학교 언어치료학과 졸업</li>
+                                            <li>&lt;경력&gt;</li>
+                                            <li>연세언어청각연구원</li>
+                                            <li>서대문 아이존 언어재활사</li>
+                                            <li>&lt;자격&gt;</li>
+                                            <li>1급 언어재활사 (보건복지부)</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="profile">
+                                            <img src="images/teacher/lang03.png" alt="">
+                                            <p>언어치료 김희영 선생님</p>
+                                        </div>
+                                        <ul class="history">
+                                            <li>&lt;학력&gt;</li>
+                                            <li>나사렛 대학교 언어치료학과 학사 졸업</li>
+                                            <li>나사렛 대학교 언어치료학과 석사 졸업</li>
+                                            <li>&lt;경력&gt;</li>
+                                            <li>쿰아동발달센터 </li>
+                                            <li>마음드림심리상담센터</li>
+                                            <li>고려수 재활병원 부설 고려수 치료연구소</li>
+                                            <li>&lt;자격&gt;</li>
+                                            <li>2급 언어재활사 (보건복지부)</li>
+                                            <li>인지학습상담전문가 2급(대한학습치료사협회)</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="profile">
+                                            <img src="images/teacher/lang04.png" alt="">
+                                            <p>언어치료 정송은 선생님</p>
+                                        </div>
+                                        <ul class="history">
+                                            <li>&lt;학력&gt;</li>
+                                            <li>광주여자대학교 언어치료학과 졸업</li>
+                                            <li>명지대학교 사회교육대학원 언어치료학과</li>
+                                            <li>&lt;경력&gt;</li>
+                                            <li>에바다아동발달치료센터</li>
+                                            <li>&lt;자격&gt;</li>
+                                            <li>2급 언어재활사 (보건복지부)</li>
+                                            <li>미술심리상담사 3급 (한국미술심리협회)</li>
+                                            <li>아동요리지도사 1급 (한국아동요리지도사협회)</li>
+                                            <li>보육교사 2급 (여성가족부)</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="profile">
+                                            <img src="images/teacher/lang05.png" alt="">
+                                            <p>언어치료 정송은 선생님</p>
+                                        </div>
+                                        <ul class="history">
+                                            <li>&lt;학력&gt;</li>
+                                            <li>나사렛대학교 언어치료학과 졸업</li>
+                                            <li>&lt;경력&gt;</li>
+                                            <li>함께가자 아동발달센터 </li>
+                                            <li>고려수 재활병원 부설 고려수 치료연구소</li>
+                                            <li>&lt;자격&gt;</li>
+                                            <li>2급 언어재활사 (보건복지부)</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="profile">
+                                            <img src="images/teacher/lang06.png" alt="">
+                                            <p>언어치료 강세빈 선생님</p>
+                                        </div>
+                                        <ul class="history">
+                                            <li>&lt;학력&gt;</li>
+                                            <li>대구가톨릭대학교 언어치료청각학과 졸업</li>
+                                            <li>&lt;경력&gt;</li>
+                                            <li>한국아동발달연구소</li>
+                                            <li>대구남구다문화가족지원센터</li>
+                                            <li>라온아동발달센터</li>
+                                            <li>광진아동심리발달지원센터</li>
+                                            <li>&lt;자격&gt;</li>
+                                            <li>2급 언어재활사 (보건복지부)</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="profile">
+                                            <img src="images/teacher/lang07.png" alt="">
+                                            <p>언어치료 황민애 선생님</p>
+                                        </div>
+                                        <ul class="history">
+                                            <li>&lt;학력&gt;</li>
+                                            <li>루터대학교 언어치료학과 졸업</li>
+                                            <li>루터대학교 대학원 언어치료학과</li>
+                                            <li>&lt;경력&gt;</li>
+                                            <li>킨더윌언어치료전문센터 </li>
+                                            <li>&lt;자격&gt;</li>
+                                            <li>2급 언어재활사 (보건복지부)</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="profile">
+                                            <img src="images/teacher/lang08.png" alt="">
+                                            <p>언어치료 정정환 선생님</p>
+                                        </div>
+                                        <ul class="history">
+                                            <li>&lt;학력&gt;</li>
+                                            <li>부산 가톨릭대학교 언어청각치료학과 졸업</li>
+                                            <li>&lt;경력&gt;</li>
+                                            <li>부산 가톨릭대학교 언어청각치료학과 연구조교</li>
+                                            <li>장애정담 다솔어린이집</li>
+                                            <li>부산 센텀이루다재활병원</li>
+                                            <li>안양아벤스병원</li>
+                                            <li>서울대효병원</li>
+                                            <li>&lt;자격&gt;</li>
+                                            <li>1급 언어재활사 (보건복지부)</li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -269,20 +456,54 @@
                                 <ul>
                                     <li>
                                         <div class="profile">
-                                            <img src="images/teacher/nori02.png" alt="">
-                                            <p>언어치료 원장 김드롱</p>
+                                            <img src="images/teacher/art01.png" alt="">
+                                            <p>미술치료 단정수 선생님</p>
                                         </div>
                                         <ul class="history">
-                                            <li>명지대학교 사회교육대학원 언어치료학과 석사졸업</li>
-                                            <li>동신대학교 언어치료학과 학사 졸업</li>
-                                            <li>전) 연세말언어인지연구소 연구원(2008~2009)</li>
-                                            <li>열린맘 아동청소년 상담센터(2009~2015)</li>
-                                            <li>상원여자중학교 특수학급 언어치료사</li>
-                                            <li>소중한아이정신과 언어치료사</li>
-                                            <li>연세대학교 재활학교 언어치료 강사(2011-2017)</li>
-                                            <li>1급 언어재활사(보건복지부령 국가자격증)</li>
-                                            <li>한국 언어재활사협회 정회원</li>
-        
+                                            <li>&lt;학력&gt; </li>
+                                            <li>서울여자대학교 특수치료전문대학원</li>
+                                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- 표현예술치료학과/미술심리치료학과</li>
+                                            <li>&lt;경력&gt;</li>
+                                            <li>굿네이버스 서울성동 좋은마음센터 부실장</li>
+                                            <li>김포아동발달센터 아동청소년상담/미술치료</li>
+                                            <li>인천광역시청소년상담복지센터</li>
+                                            <li>사우초등학교 미술치료</li>
+                                            <li>마송고등학교,신곡초등학교 특수학급 집단미술치료</li>
+                                            <li>서울시립동부병원 호스피스환자 및 보호자 미술치료</li>
+                                            <li>서울특별시 어린이병원 미술치료</li>
+                                            <li>&lt;자격,수련&gt;</li>
+                                            <li>모래놀이상담사 2급 (한국모래놀이치료학회)</li>
+                                            <li>MBTI 강사 (한국 MBTI연구소)</li>
+                                            <li>미술심리상담사 1급 (한국심성교육개발원)</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="profile">
+                                            <img src="images/teacher/art02.png" alt="">
+                                            <p>미술치료 단정수 선생님</p>
+                                        </div>
+                                        <ul class="history">
+                                            <li>&lt;학력&gt; </li>
+                                            <li> 건국대학교 디자인대학원</li>
+                                            <li>&nbsp;&nbsp;&nbsp;&nbsp;- 멀티테라피 미술치료 전공</li>
+                                            <li>&lt;경력&gt;</li>
+                                            <li>한양아이소리 임상심리사, 성인상담</li>
+                                            <li>아이맘발달센터 임상심리사, 성인상담</li>
+                                            <li>성북아이세상발달센터 임상심리사,미술치료</li>
+                                            <li>강남대치한마음상담센터 성인상담, 미술치료</li>
+                                            <li>은평연세심리언어센터 성인상담, 미술치료</li>
+                                            <li>휴엔정신과의원 임상심리사, 성인상담</li>
+                                            <li>강서필정신과병원 임상심리사</li>
+                                            <li>한국임상심리연구소 임상심리사</li>
+                                            <li>&lt;자격,수련&gt;</li>
+                                            <li>임상심리사 1급</li>
+                                            <li>가족상담사 전문가 1급</li>
+                                            <li>미술치료(멀티테라피) 전문가 2급</li>
+                                            <li>교원자격증(건국대)</li>
+                                            <li>아동상담 놀이치료사 2급</li>
+                                            <li>인터넷중독전문상담사</li>
+                                            <li>트라우마가족치료사</li>
+                                            <li>행동치료사</li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -291,20 +512,59 @@
                                 <ul>
                                     <li>
                                         <div class="profile">
-                                            <img src="images/teacher/nori03.png" alt="">
-                                            <p>언어치료 원장 김드롱</p>
+                                            <img src="images/teacher/sense01.png" alt="">
+                                            <p>감각통합 박미남 선생님</p>
                                         </div>
                                         <ul class="history">
-                                            <li>명지대학교 사회교육대학원 언어치료학과 석사졸업</li>
-                                            <li>동신대학교 언어치료학과 학사 졸업</li>
-                                            <li>전) 연세말언어인지연구소 연구원(2008~2009)</li>
-                                            <li>열린맘 아동청소년 상담센터(2009~2015)</li>
-                                            <li>상원여자중학교 특수학급 언어치료사</li>
-                                            <li>소중한아이정신과 언어치료사</li>
-                                            <li>연세대학교 재활학교 언어치료 강사(2011-2017)</li>
-                                            <li>1급 언어재활사(보건복지부령 국가자격증)</li>
-                                            <li>한국 언어재활사협회 정회원</li>
-        
+                                            <li>&lt;학력&gt;</li>
+                                            <li>대구보건대학교 작업치료학과</li>
+                                            <li>&lt;경력&gt;</li>
+                                            <li>해빛 아동청소년발달센터 감각통합치료사</li>
+                                            <li>우리두리 아동발달센터 감각통합치료사</li>
+                                            <li>&lt;자격,수련&gt;</li>
+                                            <li>작업치료사 (보건복지부)</li>
+                                            <li>BLS-Provider</li>
+                                            <li>서울재활병원 교육 수료</li>
+                                            <li>대한감각통합치료학회 교육 수료</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="profile">
+                                            <img src="images/teacher/sense02.png" alt="">
+                                            <p>감각통합 이영주 선생님</p>
+                                        </div>
+                                        <ul class="history">
+                                            <li>&lt;학력&gt;</li>
+                                            <li>극동대학교 작업치료학과</li>
+                                            <li>&lt;경력&gt;</li>
+                                            <li>해빛 아동청소년발달센터 감각통합치료사</li>
+                                            <li>우리두리 아동발달센터 감각통합치료사</li>
+                                            <li>&lt;자격,수련&gt;</li>
+                                            <li>작업치료사 (보건복지부)</li>
+                                            <li>서울재활병원 청소년 치료 세미나 수료</li>
+                                            <li>대한감각통합치료학회 감각통합 기초강좌 수료</li>
+                                            <li>Clinical Rehabilitation Study 수료</li>
+                                            <li>대한 아동학교작업치료학회 교육 세미나 (뇌성마비) 수료</li>
+                                            <li>서울재활병원 소아작업치료 세미나 수료</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="profile">
+                                            <img src="images/teacher/sense03.png" alt="">
+                                            <p>감각통합 고보라 선생님</p>
+                                        </div>
+                                        <ul class="history">
+                                            <li>&lt;학력&gt;</li>
+                                            <li>동남 보건 대학교 작업치료학과</li>
+                                            <li>&lt;경력&gt;</li>
+                                            <li>해밀 아동발달센터</li>
+                                            <li>청라라파언어심리센터</li>
+                                            <li>&lt;자격,수련&gt;</li>
+                                            <li>작업치료사 (보건복지부)</li>
+                                            <li>사회복지사 2급 (보건복지부)</li>
+                                            <li>척수손상임상치료 연수강좌 수료</li>
+                                            <li>대한감각통합치료학회 기본/심화 교육 수료</li>
+                                            <li>뇌성마비발생과 조기중재 이수</li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -313,20 +573,21 @@
                                 <ul>
                                     <li>
                                         <div class="profile">
-                                            <img src="images/teacher/nori04.png" alt="">
-                                            <p>언어치료 원장 김드롱</p>
+                                            <img src="images/teacher/pe01.png" alt="">
+                                            <p>특수체육 임은주 선생님</p>
                                         </div>
                                         <ul class="history">
-                                            <li>명지대학교 사회교육대학원 언어치료학과 석사졸업</li>
-                                            <li>동신대학교 언어치료학과 학사 졸업</li>
-                                            <li>전) 연세말언어인지연구소 연구원(2008~2009)</li>
-                                            <li>열린맘 아동청소년 상담센터(2009~2015)</li>
-                                            <li>상원여자중학교 특수학급 언어치료사</li>
-                                            <li>소중한아이정신과 언어치료사</li>
-                                            <li>연세대학교 재활학교 언어치료 강사(2011-2017)</li>
-                                            <li>1급 언어재활사(보건복지부령 국가자격증)</li>
-                                            <li>한국 언어재활사협회 정회원</li>
-        
+                                            <li>&lt;학력&gt;</li>
+                                            <li>인천대학교대학원 스포츠교육학 전공</li>
+                                            <li>한신대학교 특수체육학 전공</li>
+                                            <li>&lt;경력&gt;</li>
+                                            <li>김포시장애아동재활치료센터</li>
+                                            <li>올림피아유소년스포츠클럽아이스포</li>
+                                            <li>한국운동재활협회</li>
+                                            <li>&lt;자격,수련&gt;</li>
+                                            <li>아동특수체육지도사 (한국스포츠과학교육협회)</li>
+                                            <li>치료레크리에이션 (한국스포츠과학교육협회)</li>
+                                            <li>유아체육지도자 1급 (한국체력향상협회)</li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -335,80 +596,121 @@
                                 <ul>
                                     <li>
                                         <div class="profile">
-                                            <img src="images/teacher/nori01.png" alt="">
-                                            <p>놀이치료 원장 이유리</p>
+                                            <img src="images/teacher/recog01.png" alt="">
+                                            <p>인지치료 문유미 선생님</p>
                                         </div>
                                         <ul class="history">
-                                            <li>명지대학교 일반대학원 아동학과(아동심리치료전공) 석사 졸업</li>
-                                            <li> 명지대학교 일반대학원 아동가족심리치료 박사 졸업</li>
-                                            <li>현) 명지대학교 (방목교양)객원교수</li>
-                                            <li>명지대학교 교육대학원 유아교육과 객원교수</li>
-                                            <li>명지전문대 사회복지학과 외래교수</li>
-                                            <li>와이제이평생교육원 교수</li>
-                                            <li>전) 김태우심리언어센터 임상심리사</li>
-                                            <li>신도림아동발달센터 놀이치료사</li>
-                                            <li>고양아동청소년 정신건강센터 집단상담사</li>
-                                            <li>청소년 근로복지센터 학교폭력, 근로, 진로예방 강사</li>
-                                            <li>양천 아이존/열린맘 아동청소년 상담센터 놀이치료사</li>
-                                            <li>전문상담사 2급(한국상담학회)</li>
-                                            <li>임상심리사 2급(산업인력공단)</li>
-                                            <li>보육교사 1급(보건복지부)</li>
-                                            <li>가정복지사 2급</li>
-                                            <li>치료놀이 초,중 고급 수료</li>    
+                                            <li>&lt;학력&gt;</li>
+                                            <li>건양대학교 초등특수교육과 졸업</li>
+                                            <li>중등특수교육과(복수전공)</li>
+                                            <li>&lt;경력&gt;</li>
+                                            <li>현)해빛아동청소년발달센터 인지치료사</li>
+                                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;성민종합사회복지관 인지치료사</li>
+                                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;계양아동발달센터 인지치료사</li>
+                                            <li>전)대전아동가족클리닉 인지치료사</li>
+                                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;금천장애인종합복지관 인지치료사</li>
+                                            <li>&lt;자격&gt;</li>
+                                            <li>초등특수정교사 2급</li>
+                                            <li>중등특수정교사 2급</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="tabpanel17" class="tabpanel" role="tabpanel" aria-labelledby="tab17">
+                                <ul>
+                                    <li>
+                                        <div class="profile">
+                                            <img src="images/teacher/adult01.png" alt="">
+                                            <p>성인/가족상담 김혜영 선생님</p>
+                                        </div>
+                                        <ul class="history">
+                                            <li>&lt;학력&gt;</li>
+                                            <li>이화여자대학교 심리학 학사 전공</li>
+                                            <li>이화여자대학교 심리학 석사전공</li>
+                                            <li>University of North Carolina at Chapel Hill</li>
+                                            <li>학교심리학 석사 전공</li>
+                                            <li>&lt;경력&gt;</li>
+                                            <li>성모마음 정신과 부설 ETM 상담사</li>
+                                            <li>여명학교 상담사</li>
+                                            <li>아이코리아 아동발달교육 연구원</li>
+                                            <li>평택대학교 외래교수</li>
+                                            <li>서울대학교 외부강사</li>
+                                            <li>&lt;자격&gt;</li>
+                                            <li>상담심리사(한국상담심리학회)</li>
+                                            <li>중독상담전문가(사단법인 아이코리아)</li>
+                                            <li>놀이심리상담사 1급(한국발달지원학회)</li>
                                         </ul>
                                     </li>
                                     <li>
                                         <div class="profile">
-                                            <img src="images/teacher/nori02.png" alt="">
-                                            <p>언어치료 원장 김드롱</p>
+                                            <img src="images/teacher/adult02.png" alt="">
+                                            <p>성인/가족상담 박진희 선생님</p>
                                         </div>
                                         <ul class="history">
-                                            <li>명지대학교 사회교육대학원 언어치료학과 석사졸업</li>
-                                            <li>동신대학교 언어치료학과 학사 졸업</li>
-                                            <li>전) 연세말언어인지연구소 연구원(2008~2009)</li>
-                                            <li>열린맘 아동청소년 상담센터(2009~2015)</li>
-                                            <li>상원여자중학교 특수학급 언어치료사</li>
-                                            <li>소중한아이정신과 언어치료사</li>
-                                            <li>연세대학교 재활학교 언어치료 강사(2011-2017)</li>
-                                            <li>1급 언어재활사(보건복지부령 국가자격증)</li>
-                                            <li>한국 언어재활사협회 정회원</li>
-        
+                                            <li>&lt;학력&gt;</li>
+                                            <li>백석대학교상담대학원 가족상담학 전공 (석사졸업)</li>
+                                            <li>&lt;경력&gt;</li>
+                                            <li>법무부남부보호관찰소 보호관찰청소년 집단상담 및 부모교육</li>
+                                            <li>한국가족상담코칭센터</li>
+                                            <li>서울시교육청 학부모 진로코치 위원</li>
+                                            <li>연합가족상담연구소</li>
+                                            <li>양천구청소년상담센터</li>
+                                            <li>&lt;자격&gt;</li>
+                                            <li>한국상담학회 2급 및 재난상담사 (한국상담학회)</li>
+                                            <li>청소년상담사 (여성가족부)</li>
+                                            <li>건강가정사 (여성가족부)</li>
+                                            <li>부부상담 및 가족상담사 1급 (한국중앙가족상담협회)</li>
+                                            <li>인터넷중독상담사 (한국정보화진흥회)</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="tabpanel18" class="tabpanel" role="tabpanel" aria-labelledby="tab18">
+                                <ul>
+                                    <li>
+                                        <div class="profile">
+                                            <img src="images/teacher/clinical01.png" alt="">
+                                            <p>임상심리사 서인재 선생님</p>
+                                        </div>
+                                        <ul class="history">
+                                            <li>&lt;학력&gt;</li>
+                                            <li>중앙대학교 심리서비스대학원 임상심리학과 전공</li>
+                                            <li>&lt;경력&gt;</li>
+                                            <li>서울시 아동양육시설 임상심리사</li>
+                                            <li>서울지역 경찰서 범죄심리사</li>
+                                            <li>초등학교 의무교육학생관리위원회 위원</li>
+                                            <li>경기도 아동양육시설 임상심리사</li>
+                                            <li>부산 영도병원 신경과 임상심리사</li>
+                                            <li>&lt;자격&gt;</li>
+                                            <li>임상심리사 2급 (한국산업인력공단 보건복지부)</li>
+                                            <li>청소년상담사 3급 (여성가족부)</li>
+                                            <li>놀이심리상담사 1급 (한국심리치료사협회)</li>
+                                            <li>미술심리상담사 1급 (한국심리치료사협회)</li>
+                                            <li>아동트라우마 전문상담사 2급 (사회서비스연구소 한울)</li>
                                         </ul>
                                     </li>
                                     <li>
                                         <div class="profile">
-                                            <img src="images/teacher/nori03.png" alt="">
-                                            <p>언어치료 원장 김드롱</p>
+                                            <img src="images/teacher/clinical02.png" alt="">
+                                            <p>성인/가족상담 조한솔 선생님</p>
                                         </div>
                                         <ul class="history">
-                                            <li>명지대학교 사회교육대학원 언어치료학과 석사졸업</li>
-                                            <li>동신대학교 언어치료학과 학사 졸업</li>
-                                            <li>전) 연세말언어인지연구소 연구원(2008~2009)</li>
-                                            <li>열린맘 아동청소년 상담센터(2009~2015)</li>
-                                            <li>상원여자중학교 특수학급 언어치료사</li>
-                                            <li>소중한아이정신과 언어치료사</li>
-                                            <li>연세대학교 재활학교 언어치료 강사(2011-2017)</li>
-                                            <li>1급 언어재활사(보건복지부령 국가자격증)</li>
-                                            <li>한국 언어재활사협회 정회원</li>
-        
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <div class="profile">
-                                            <img src="images/teacher/nori04.png" alt="">
-                                            <p>언어치료 원장 김드롱</p>
-                                        </div>
-                                        <ul class="history">
-                                            <li>명지대학교 사회교육대학원 언어치료학과 석사졸업</li>
-                                            <li>동신대학교 언어치료학과 학사 졸업</li>
-                                            <li>전) 연세말언어인지연구소 연구원(2008~2009)</li>
-                                            <li>열린맘 아동청소년 상담센터(2009~2015)</li>
-                                            <li>상원여자중학교 특수학급 언어치료사</li>
-                                            <li>소중한아이정신과 언어치료사</li>
-                                            <li>연세대학교 재활학교 언어치료 강사(2011-2017)</li>
-                                            <li>1급 언어재활사(보건복지부령 국가자격증)</li>
-                                            <li>한국 언어재활사협회 정회원</li>
-        
+                                            <li>&lt;학력&gt;</li>
+                                            <li>명지대학교 일반대학원 아동학과</li>
+                                            <li>아동가족심리치료 전공 (박사과정)</li>
+                                            <li>명지대학교 일반대학원 아동학과</li>
+                                            <li>아동가족심리치료전공 (석사 졸업)</li>
+                                            <li>명지대학교 사회과학대학 아동학 학사</li>
+                                            <li>&lt;경력&gt;</li>
+                                            <li>국제아동발달클리닉 놀이치료사</li>
+                                            <li>국립국악원 유아누리 전문강사</li>
+                                            <li>명지대 아동가족심리치료 연구소 연구원</li>
+                                            <li>&lt;자격&gt;</li>
+                                            <li>임상심리사 2급</li>
+                                            <li>아동상담사 2급</li>
+                                            <li>유치원 정교사 2급</li>
+                                            <li>청소년상담사 2급</li>
+                                            <li>보육교사 2급</li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -420,9 +722,9 @@
             </section>
             <!-- //teacher -->
 
-            <section id="facility" class="sect mb10">
-                <div class="sub_area waypoint">
-                    <div class="sub_tit pi tc">
+            <section id="facility" class="sect mb30">
+                <div class="sub1_area waypoint">
+                    <div class="sub1_tit pi tc">
                         <h3>해빛 시설보기</h3>
                         <p>‘청결’과 ‘안전’을 준수하는 편안한 해빛 시설에서<br>아이들과 함께 꿈을 그려나갑니다<em>!</em></p>
                     </div>
@@ -432,76 +734,66 @@
                             <li id="tab22" class="tab last" role="tab" aria-controls="tabpanel22">마곡점</li>
                         </ul>
                         <div id="tabpanel21" class="tabpanel" role="tabpanel" aria-labelledby="tab21">
-                            <article class="interior-area">
-                                <div class="container p_r">
-                                    <div class="swiper-container interiorView interiorView1">
-                                        <ul class="swiper-wrapper">
-                                            <li class="swiper-slide">
-                                                <img src="images/place/hawgok01.jpg" alt="">
-                                                <p>공간1</p>
-                                            </li>
-                                            <li class="swiper-slide">
-                                                <img src="images/place/hawgok02.jpg" alt="">
-                                                <p>공간2</p>
-                                            </li>
-                                            <li class="swiper-slide">
-                                                <img src="images/place/hawgok03.jpg" alt="">
-                                                <p>공간3</p>
-                                            </li>
-                                            <li class="swiper-slide">
-                                                <img src="images/place/hawgok04.jpg" alt="">
-                                                <p>공간4</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="ctrls next"></div>
-                                    <div class="ctrls prev"></div>
-                                    <div class="swiper-container interiorThumb interiorThumb1">
-                                        <ul class="swiper-wrapper">
-                                            <li class="swiper-slide"><img src="images/place/hawgok01.jpg" alt=""></li>
-                                            <li class="swiper-slide"><img src="images/place/hawgok02.jpg" alt=""></li>
-                                            <li class="swiper-slide"><img src="images/place/hawgok03.jpg" alt=""></li>
-                                            <li class="swiper-slide"><img src="images/place/hawgok04.jpg" alt=""></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </article>
+                            <div class="swiper-container interiorView interiorView1">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <img src="images/place/hawgok01.jpg" alt="">
+                                        <p><span>화곡점</span>서울특별시 강서구 강서로 210, 401호 6층<strong class="f_num">02.2665.1175</strong></p>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="images/place/hawgok02.jpg" alt="">
+                                        <p><span>화곡점</span>서울특별시 강서구 강서로 210, 401호 6층<strong class="f_num">02.2665.1175</strong></p>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="images/place/hawgok03.jpg" alt="">
+                                        <p><span>화곡점</span>서울특별시 강서구 강서로 210, 401호 6층<strong class="f_num">02.2665.1175</strong></p>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="images/place/hawgok04.jpg" alt="">
+                                        <p><span>화곡점</span>서울특별시 강서구 강서로 210, 401호 6층<strong class="f_num">02.2665.1175</strong></p>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="images/place/hawgok05.jpg" alt="">
+                                        <p><span>화곡점</span>서울특별시 강서구 강서로 210, 401호 6층<strong class="f_num">02.2665.1175</strong></p>
+                                    </li>
+                                </ul>
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination"></div>
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next">next</div>
+                                <div class="swiper-button-prev">prev</div>
+                            </div>
                         </div>
                         <div id="tabpanel22" class="tabpanel" role="tabpanel" aria-labelledby="tab22">
-                            <article class="interior-area">
-                                <div class="container p_r">
-                                    <div class="swiper-container interiorView interiorView2">
-                                        <ul class="swiper-wrapper">
-                                            <li class="swiper-slide">
-                                                <img src="images/place/magok01.jpg" alt="">
-                                                <p>공간1</p>
-                                            </li>
-                                            <li class="swiper-slide">
-                                                <img src="images/place/magok02.jpg" alt="">
-                                                <p>공간2</p>
-                                            </li>
-                                            <li class="swiper-slide">
-                                                <img src="images/place/magok03.jpg" alt="">
-                                                <p>공간3</p>
-                                            </li>
-                                            <li class="swiper-slide">
-                                                <img src="images/place/magok04.jpg" alt="">
-                                                <p>공간4</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="ctrls next"></div>
-                                    <div class="ctrls prev"></div>
-                                    <div class="swiper-container interiorThumb interiorThumb2">
-                                        <ul class="swiper-wrapper">
-                                            <li class="swiper-slide"><img src="images/place/magok01.jpg" alt=""></li>
-                                            <li class="swiper-slide"><img src="images/place/magok02.jpg" alt=""></li>
-                                            <li class="swiper-slide"><img src="images/place/magok03.jpg" alt=""></li>
-                                            <li class="swiper-slide"><img src="images/place/magok04.jpg" alt=""></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </article>
+                            <div class="swiper-container interiorView interiorView2">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <img src="images/place/magok01.jpg" alt="">
+                                        <p><span>마곡점</span>서울특별시 강서구 마곡중앙1로 26, 501호-504호<strong class="f_num">02.2606.1175</strong></p>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="images/place/magok02.jpg" alt="">
+                                        <p><span>마곡점</span>서울특별시 강서구 마곡중앙1로 26, 501호-504호<strong class="f_num">02.2606.1175</strong></p>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="images/place/magok03.jpg" alt="">
+                                        <p><span>마곡점</span>서울특별시 강서구 마곡중앙1로 26, 501호-504호<strong class="f_num">02.2606.1175</strong></p>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="images/place/magok04.jpg" alt="">
+                                        <p><span>마곡점</span>서울특별시 강서구 마곡중앙1로 26, 501호-504호<strong class="f_num">02.2606.1175</strong></p>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="images/place/magok05.jpg" alt="">
+                                        <p><span>마곡점</span>서울특별시 강서구 마곡중앙1로 26, 501호-504호<strong class="f_num">02.2606.1175</strong></p>
+                                    </li>
+                                </ul>
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination"></div>
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next">next</div>
+                                <div class="swiper-button-prev">prev</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -509,7 +801,7 @@
             <!-- //facility -->
              
             <section id="map" class="sect waypoint">
-                <div class="sub_tit ye tc">
+                <div class="sub1_tit ye tc">
                     <p>든든한 해빛과 함께<br>안전한 동행</p>
                     <h3>해빛 오시는<span>길</span></h3>
                 </div>
@@ -524,25 +816,39 @@
     <!-- //main -->
 
     <footer id="footer"> 
-        <div class="f_area clear">
-            <div class="contact f_l">
-                <p>
-                    해빛은 언제나<br>
-                    기다리고 있습니다
-                </p>
-                <div class="call">02.2606.1175</div>
-                <ul class="branch clear">
-                    <li><a href="">화곡점</a></li>
-                    <li><a href="">마곡점</a></li>
-                </ul>
+        <div class="f_area">
+            <div class="f_top">
+                <div class="contact">
+                    <p>
+                        해빛은 언제나<br>
+                        기다리고 있습니다
+                    </p>
+                    <div class="call f_num">02.2606.1175</div>
+                    <ul class="info">
+                        <li>해빛아동청소년발달센터</li>
+                        <li>대표자 : 김드롱</li>
+                        <li>사업자등록번호 : 204-95-08503</li>
+                    </ul>
+                </div>
+                <div class="time">
+                    <p>운영시간</p>
+                    <ul>
+                        <li>월 - 금 : am 10:00 - pm 08:00</li>
+                        <li>토 요 일 : am 09:00 - pm 04:00</li>
+                    </ul>
+                </div>
             </div>
-
-            <div class="time f_r">
-                <p>운영시간</p>
-                <ul>
-                    <li>월-금 : am 10:00 - px 08:00</li>
-                    <li>토요일 : am 09:00 - px 04:00</li>
-                </ul>
+            <div class="f_btm">
+                <dl>
+                    <dt>마곡점</dt>
+                    <dd>서울특별시 강서구 마곡중앙1로 26, 501호~504호(마곡동, 마곡엥리체)</dd>
+                    <dd class="f_num">02.2665.1175</dd>
+                </dl>
+                <dl>
+                    <dt>화곡점</dt>
+                    <dd>서울특별시 강서구 강서로 210, 401호 6층(화곡동, 삼광빌딩)</dd>
+                    <dd class="f_num">02.2606.1175</dd>
+                </dl>
             </div>
         </div>
     </footer>
