@@ -19,23 +19,32 @@
 
 
 /* sub2~5 common */
-.btmbnr {background: url(../sub/images/btm_bnr.jpg) no-repeat center top; width: 100%; height: 496px;}
+.btmbnr {background: url(../sub/images/btm_bnr.jpg) no-repeat center top; width: 100%; height: 496px; font-size: 1.22rem; line-height: 2;}
+.btmbnr p {position: absolute; top: 50%; right: 0; transform: translate(0,-50%);}
+.btmbnr strong {font-size: 1.7rem; font-weight: normal;}
 
-ul.dot li h5:before {content: ''; position: absolute; top: 50%; left: 0; transform: translate(0,-50%); width: 6px; height: 6px; border-radius: 50%; background: #000;}
-ul.dot li h5 {position: relative; padding-left: 16px;}
+.dot {position: relative; padding-left: 0.88em;}
+.dot:before {content: ''; position: absolute; top: 50%; left: 0; transform: translate(0,-50%); width: 6px; height: 6px; border-radius: 50%; background: #000;}
 
-.area1200 {width: 1200px; margin: 0 auto;}
+.rect {position: relative; padding-left: 2.22em;}
+.rect:before {content: ''; position: absolute; top: 50%; left: 0; transform: translate(0,-50%); width: 0.7em; height: 0.7em; border: 2px solid #bfbfbf;}
+.rect.twoline:before {top: 0.3em; transform: translate(0,0);}
+
+.area1200 {width: 1200px; height: 100%; margin: 0 auto;}
 
 .lnb_cnt article {padding-top: 120px;}
 .lnb_cnt article h4 {font-size: 1.4rem; line-height: 1.4;}
+.lnb_cnt article h4 span {font-size: 1.05rem; color: #a0a0a0;}
 .lnb_cnt article p {line-height: 1.7;}
 
 .sub_tit h3 {font-size: 1.7rem; margin-bottom: 0.4em;}
 .sub_tit p {font-size: 1.1rem; color: #a0a0a0; margin-bottom: 60px;}
 
+
 .define {padding-top: 120px;}
 .define h4 {float: left;}
 .define .txt_area {float: right; font-size: 0.95rem;}
+.define .txt_area > p {color: #222;}
 .define .txt_area li + li {margin-top: 60px;}
 .define .txt_area li span {font-size: 1.14rem; line-height: 1.4;}
 .define .txt_area li p {color: #787878; margin-top: 1em;}
@@ -46,7 +55,7 @@ ul.dot li h5 {position: relative; padding-left: 16px;}
 .half_ul ul + ul {margin-left: 10%;}
 .half_ul li + li {margin-top: 40px;}
 .half_ul li h5 {font-size: 1.1rem;}
-.half_ul li p {font-size: 0.95rem; color: #787878; margin-top: 0.8em;}
+.half_ul li p {font-size: 0.95rem; color: #787878; margin-top: 1em;}
 
 .bd_box {border: 1px solid #e5e5e5; padding: 4em 3em;}
 
@@ -171,7 +180,6 @@ ul.dot li h5 {position: relative; padding-left: 16px;}
 
 
 
-
 /* ----------------sub2------------------------ */
 .sub02 #subTit {background-image: url(../sub/images/sub2_titbg.jpg);}
 
@@ -184,12 +192,39 @@ ul.dot li h5 {position: relative; padding-left: 16px;}
 .sub02 .cnt3 .half_ul:after {height: 100%;}
 .sub02 .cnt3 .half_ul {flex-wrap: wrap; width: 100%;}
 .sub02 .cnt3 .half_ul li {width: calc(50% - 40px); margin-top: 0; padding: 40px 0;}
-
 .sub02 .cnt3 .half_ul li:nth-child(even) {margin-left: 80px;}
 
 
-/* .half_ul {position: relative; margin-top: 60px;}
-.half_ul:after {content:''; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 1px; height: 80%; background: #e5e5e5;}
-.half_ul ul {width: 50%;}
-.half_ul ul + ul {margin-left: 10%;}
-.half_ul li + li {margin-top: 40px;} */
+
+/* ----------------sub3------------------------ */
+.sub03 #subTit {background-image: url(../sub/images/sub3_titbg.jpg);}
+
+.rectlist > div {width: calc(50% - 20px);}
+.rectlist > div + div {margin-left: 40px;}
+
+.rectlist h5 {font-size: 1.2rem; padding-left: 1.4em;}
+.rectlist h5.dot:before {width: 0.6em; height: 0.6em;}
+
+.rectlist > div:nth-child(1) h5.dot:before {background: #ffcc25;}
+.rectlist > div:nth-child(2) h5.dot:before {background: #a3bc2e;}
+.rectlist:after {display: none;}
+
+.rectlist li {font-size: 0.94rem; line-height: 1.6;}
+.rectlist li + li {margin-top: 1em;}
+
+.checkbg {background: url(../sub/images/chechbg.jpg);}
+.define .txt_area .checkbg li + li {margin-top: 1.6em;}
+
+.sub03 .cnt1 .rectlist ul {width: 100%; height: 560px;}
+.sub03 .cnt2 .rectlist ul {width: 100%; height: 380px;}
+
+.sub03 .cnt1 .rectlist .bd_box {padding: 3.6em 1.8em 0;}
+.sub03 .cnt2 .rectlist .bd_box {padding: 3.6em 2.4em 0;}
+
+.sub03 .cnt2 .half_ul:after {height: 100%; background: #d2d2d2;}
+.sub03 .cnt2 .half_ul li {width: calc(50% - 40px); margin-top: 0;}
+.sub03 .cnt2 .half_ul li:nth-child(2) {margin-left: 80px;}
+
+.sub03 .cnt4 .checkbg .twoline {line-height: 1.8;}
+
+.sub03 .cnt5 .define .txt_area {width: 69%;}

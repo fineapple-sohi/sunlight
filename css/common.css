@@ -44,6 +44,8 @@ strong {font-weight: 600;}
 .h_area {position: relative; max-width: 1920px; min-width: 1280px; height: 100%; margin: 0 auto; padding: 0 1.8em;}
 .f_area {width: 1160px; margin: 0 auto; padding: 0 30px;}
 
+.mb2 {margin-bottom: 20px;}
+.mb4 {margin-bottom: 40px;}
 .mb6 {margin-bottom: 60px;}
 .mb8 {margin-bottom: 80px;}
 .mb10 {margin-bottom: 100px;}
@@ -56,6 +58,9 @@ strong {font-weight: 600;}
 
 .pt8 {padding-top: 80px;}
 .pt10 {padding-top: 100px;}
+
+.pb8 {padding-bottom: 80px;}
+.pb10 {padding-bottom: 100px;}
 
 .fc_y {color: #ffdb63;}
 .fc_g {color: #bfd45d;}
