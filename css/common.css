@@ -56,8 +56,11 @@ strong {font-weight: 600;}
 .mb20 {margin-bottom: 200px;}
 .mb30 {margin-bottom: 300px;}
 
+.pt2 {padding-top: 20px;}
+.pt4 {padding-top: 40px;}
 .pt8 {padding-top: 80px;}
 .pt10 {padding-top: 100px;}
+
 
 .pb8 {padding-bottom: 80px;}
 .pb10 {padding-bottom: 100px;}

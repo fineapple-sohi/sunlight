@@ -79,7 +79,7 @@
 #introduce .txt_area h2 {font-size: 2rem; margin: 108px 0 54px;}
 #introduce .txt_area p {line-height: 2;}
 #introduce .txt_area p + p {margin-top: 1.2em;}
-#introduce .more {float: right; margin: 90px 40% 0 0;}
+#introduce .more {position: relative; float: right; margin: 90px 40% 0 0; z-index: 100;}
 
 
 
