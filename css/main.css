@@ -113,8 +113,11 @@
 #special > p {font-size: 2.2rem;}
 
 #special ul.point {width: 80%; max-width: 1500px; margin: 0 auto; padding-top: 120px; font-family: 'Chosunilbo_myungjo'; color: #414141;}
-#special ul.point li {display: flex; align-items: center; margin-bottom: 120px; font-size: 2.2rem; line-height: 60px;}
+#special ul.point li {display: flex; align-items: center; margin-bottom: 120px; font-size: 1.8rem; line-height: 60px;}
+#special ul.point li strong{font-size: 2.5rem;}
 #special ul.point li:nth-child(even) {flex-direction: row-reverse;}
+
+
 
 #special ul.point li > img {width: 38%;}
 

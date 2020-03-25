@@ -64,11 +64,13 @@
 .role {padding: 120px 0;}
 .o_list {justify-content: center; margin-top: 60px;}
 .o_list li {display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; width: 225px; height: 225px; border-radius: 50%;}
+.o_list.sub2-2 li {width: 190px; height: 190px;}
 .o_list li:nth-child(1) {background: #ffcc25;}
 .o_list li:nth-child(2) {background: #a3bc2e;}
 .o_list li:nth-child(3) {background: #39ba8b; color: #fff;}
 .o_list li:nth-child(4) {background: #0cc0b2; color: #fff;}
 .o_list li:nth-child(5) {background: #3674b3; color: #fff;}
+.o_list li:nth-child(6) {background: #606dcf; color: #fff;}
 .o_list li + li {margin-left: 16px;}
 .o_list li span {font-size: 0.94rem; line-height: 1.5;}
 .o_list li p {font-size: 1.45rem; line-height: 1.2; margin-top: 0.2em;}
@@ -254,6 +256,9 @@
 .sub04 .cnt5 .define .txt_area li span {font-size: 1.4rem;}
 .sub04 .cnt5 .define .txt_area li p {font-size: 1rem; line-height: 2.4; margin-top: 1.5em;}
 
+.sub04 .half_ul li .ord-list li + li{margin-top: 1em;}
+.ord-list{color: #575757; padding-inline-start: 1rem;}
+
 
 /* ----------------sub5------------------------ */
 .sub05 #subTit {background-image: url(../sub/images/sub5_titbg.jpg);}
@@ -266,16 +271,17 @@
 
 .sub05 .half_ul:after {height: 100%;}
 
-.sub05 .cnt1 .half_ul li {width: 33.3333%;}
-.sub05 .cnt1 .half_ul li + li {margin-left: 10px; padding: 0 20px;}
-.sub05 .cnt1 .half_ul:after {left: 66.6666%;}
-.sub05 .cnt1 .half_ul:before {content: ''; position: absolute; top: 50%; left: 33.3333%; transform: translate(-50%,-50%); width: 1px; height: 100%; background: #e5e5e5;}
+.sub05 .cnt1 .half_ul li ,.sub05 .cnt3 .half_ul li {width: 33.3333%;}
+.sub05 .cnt1 .half_ul li + li,.sub05 .cnt3 .half_ul li + li {margin-left: 10px; padding: 0 20px;}
+.sub05 .cnt1 .half_ul:after,.sub05 .cnt3 .half_ul:after {left: 66.6666%;}
+.sub05 .cnt1 .half_ul:before ,.sub05 .cnt3 .half_ul:before {content: ''; position: absolute; top: 50%; left: 33.3333%; transform: translate(-50%,-50%); width: 1px; height: 100%; background: #e5e5e5;}
 
 .sub05 .cnt2 .half_ul ul + ul {margin-left: 4%;}
+/*
 
 .sub05 .cnt3 .half_ul:after {display: none;}
 .sub05 .cnt3 .half_ul li {width: 25%;}
 .sub05 .cnt3 .half_ul li:nth-child(2) {width: 23%;}
 .sub05 .cnt3 .half_ul li:nth-child(3) {width: 27%;}
 .sub05 .cnt3 .half_ul h4 span {font-size: 1.1rem; color: #000;}
-.sub05 .cnt3 .half_ul li + li {padding-left: 20px; border-left: 1px solid #dcdcdc;}
+.sub05 .cnt3 .half_ul li + li {padding-left: 20px; border-left: 1px solid #dcdcdc;}*/
