@@ -14,7 +14,7 @@
 #mainTit .txt_area h2:before {left: 10%; background: rgba(250, 215, 101,0.5);}
 #mainTit .txt_area h2:after {left: 60%; background: rgba(191, 212, 93,0.5);}
 
-#mainTit.waypoint.on .txt_area h2:before {animation: bgcover 1s forwards 0.2s;}
+#mainTit.waypoint.on .txt_area h2:before {animation: bgcover 1s forwards 0.35s;}
 #mainTit.waypoint.on .txt_area h2:after {animation: bgcover 1s forwards 0.8s;}
 
 #mainTit.waypoint.on .txt_area h2 strong {animation: rubberBand 1.2s forwards;}
