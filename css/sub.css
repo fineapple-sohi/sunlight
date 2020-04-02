@@ -53,8 +53,8 @@
 
 .half_ul {position: relative; margin-top: 60px;}
 .half_ul:after {content:''; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 1px; height: 80%; background: #e5e5e5;}
-.half_ul ul {width: 50%;}
-.half_ul ul + ul {margin-left: 10%;}
+.half_ul > ul {width: 50%;}
+.half_ul > ul + ul {margin-left: 10%;}
 .half_ul li + li {margin-top: 40px;}
 .half_ul li h5 {font-size: 1.1rem;}
 .half_ul li p {font-size: 0.95rem; color: #787878; margin-top: 1em;}
@@ -92,7 +92,7 @@
 .waypoint.on .sub1_tit h3 {opacity: 1; transition-delay: 0.5s;}
 .waypoint.on .sub1_tit p {opacity: 1; transition-delay: 0.7s;}
 
-.sub1_tit:before, .sub1_tit h3 {transition: all 0.4s;}
+.sub1_tit:before, .sub1_tit h3 {transition: all 0.5s;}
 .sub1_tit p {transition: all 1s;}
 
 /* subTit */
@@ -258,7 +258,7 @@
 
 .sub04 .half_ul li .ord-list li + li{margin-top: 1em;}
 .ord-list{color: #575757; padding-inline-start: 1rem;}
-
+.depth3{padding: 2em 0 0 2em;}
 
 /* ----------------sub5------------------------ */
 .sub05 #subTit {background-image: url(../sub/images/sub5_titbg.jpg);}
@@ -266,22 +266,27 @@
 
 .sub05 .define {padding-top: 30px;}
 .sub05 .define .titimg {width: 45%;}
-.sub05 .define .txt_area li + li {margin-top: 1.4em;}
-.sub05 .half_ul li + li {margin-top: 0;}
+.sub05 .define .txt_area li {line-height: 1.6;}
+.sub05 .define .txt_area li + li {margin-top: 1em;}
 
+.sub05 .half_ul li + li {margin-top: 0;}
 .sub05 .half_ul:after {height: 100%;}
 
 .sub05 .cnt1 .half_ul li ,.sub05 .cnt3 .half_ul li {width: 33.3333%;}
 .sub05 .cnt1 .half_ul li + li,.sub05 .cnt3 .half_ul li + li {margin-left: 10px; padding: 0 20px;}
 .sub05 .cnt1 .half_ul:after,.sub05 .cnt3 .half_ul:after {left: 66.6666%;}
 .sub05 .cnt1 .half_ul:before ,.sub05 .cnt3 .half_ul:before {content: ''; position: absolute; top: 50%; left: 33.3333%; transform: translate(-50%,-50%); width: 1px; height: 100%; background: #e5e5e5;}
+.sub05 .cnt1 table {width: 100%;}
+.sub05 .cnt1 table caption {font-size: 1.4rem; text-align: left; margin-bottom: 2rem;}
+.sub05 .cnt1 table td {padding: 2em 1em 2em 2em; line-height: 1.6; border-left: 1px solid #ddd;}
+.sub05 .cnt1 table td ul li + li {margin-top: 1em;}
+.sub05 .cnt1 table td strong {display: block; margin-bottom: 0.4em;}
+.sub05 .cnt1 table td:nth-child(2) li:before {content: '- ';}
 
-.sub05 .cnt2 .half_ul ul + ul {margin-left: 4%;}
-/*
-
-.sub05 .cnt3 .half_ul:after {display: none;}
-.sub05 .cnt3 .half_ul li {width: 25%;}
-.sub05 .cnt3 .half_ul li:nth-child(2) {width: 23%;}
-.sub05 .cnt3 .half_ul li:nth-child(3) {width: 27%;}
-.sub05 .cnt3 .half_ul h4 span {font-size: 1.1rem; color: #000;}
-.sub05 .cnt3 .half_ul li + li {padding-left: 20px; border-left: 1px solid #dcdcdc;}*/
+.sub05 .cnt2 .half_ul {flex-wrap: wrap; justify-content: space-between;}
+.sub05 .cnt2 .half_ul:after {height: 50%; top: 0; transform: translate(-50%,0);}
+.sub05 .cnt2 .half_ul > li {width: 47%;}
+.sub05 .cnt2 .half_ul > li p {padding-left: 1.5em;}
+.sub05 .cnt2 .half_ul > li:nth-child(3) {width: 100%;}
+.sub05 .cnt2 .half_ul > li ul li {font-size: 0.95rem; line-height: 1.6; color: #787878; margin-bottom: 1rem; padding-left: 1em;}
+.sub05 .cnt2 .half_ul > li ul li:before {content: '- ';}

@@ -44,23 +44,25 @@ strong {font-weight: 600;}
 .h_area {position: relative; max-width: 1920px; min-width: 1280px; height: 100%; margin: 0 auto; padding: 0 1.8em;}
 .f_area {width: 1160px; margin: 0 auto; padding: 0 30px;}
 
-.mb2 {margin-bottom: 20px;}
-.mb4 {margin-bottom: 40px;}
-.mb6 {margin-bottom: 60px;}
-.mb8 {margin-bottom: 80px;}
-.mb10 {margin-bottom: 100px;}
-.mb12 {margin-bottom: 120px;}
-.mb14 {margin-bottom: 140px;}
-.mb16 {margin-bottom: 160px;}
-.mb18 {margin-bottom: 180px;}
-.mb20 {margin-bottom: 200px;}
-.mb30 {margin-bottom: 300px;}
+.mb2 {margin-bottom: 1rem;}
+.mb4 {margin-bottom: 2rem;}
+.mb6 {margin-bottom: 3rem;}
+.mb8 {margin-bottom: 4rem;}
+.mb10 {margin-bottom: 5rem;}
+.mb12 {margin-bottom: 6rem;}
+.mb14 {margin-bottom: 7rem;}
+.mb16 {margin-bottom: 8rem;}
+.mb18 {margin-bottom: 9rem;}
+.mb20 {margin-bottom: 10rem;}
+.mb30 {margin-bottom: 15rem;}
 
-.pt2 {padding-top: 20px;}
-.pt4 {padding-top: 40px;}
-.pt8 {padding-top: 80px;}
-.pt10 {padding-top: 100px;}
+.pt2 {padding-top: 1rem;}
+.pt4 {padding-top: 2rem;}
+.pt8 {padding-top: 4rem;}
+.pt10 {padding-top: 5rem;}
 
+.lh16 {line-height: 1.6;}
+.lh18 {line-height: 1.8;}
 
 .pb8 {padding-bottom: 80px;}
 .pb10 {padding-bottom: 100px;}
