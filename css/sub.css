@@ -123,7 +123,7 @@
 
 #teachTab .tablist {display: inline-block; margin-bottom: 100px; padding: 0 2em; text-align: center; border: 1px solid #eee;}
 #teachTab .tablist li {display: inline-block; color: #aaa; padding: 1em 1.5em;}
-#teachTab .tablist li.active {color: #181818;}
+#teachTab .tablist li.on {color: #181818;}
 
 #teachTab .tabpanel > ul:after, #teachTab .tabpanel > ul > li:after {content: ''; display: block; clear: both;}
 #teachTab .tabpanel > ul > li {float: left; width: 50%; height: 620px; text-align: left;}
@@ -132,10 +132,10 @@
 #teachTab #tabpanel14 > ul > li {height: 460px;} 
 
 #teachTab .tabpanel .profile, #teachTab .tabpanel .history {float: left;}
-#teachTab .tabpanel .profile {margin-right: 40px; text-align: center;}
-#teachTab .tabpanel .profile p {margin-top: 24px;}
-#teachTab .tabpanel .history {font-size: 0.85rem; font-weight: 300; margin-top: 20px}
-#teachTab .tabpanel .history li + li {margin-top: 16px;}
+#teachTab .tabpanel .profile {width: 34%; margin-right: 2%; text-align: center;}
+#teachTab .tabpanel .profile p {margin-top: 1.6em;}
+#teachTab .tabpanel .history {width: 64%; font-size: 0.85rem; font-weight: 300; margin-top: 20px; line-height: 1.6;}
+#teachTab .tabpanel .history li + li {margin-top: 0.6em;}
 
 
 /* facility */
@@ -151,8 +151,8 @@
 
 #faciTab .tablist {margin-bottom: 60px;}
 #faciTab .tablist li {display: inline-block; padding: 0.6em 1.5em; border-radius: 5em; color: #fff; background: #d2d2d2; margin: 0 0.5em; font-size: 1.1em;}
-#faciTab .tablist li:nth-child(1).active {background: #bfd45d;}
-#faciTab .tablist li:nth-child(2).active {background: #ffcc25;}
+#faciTab .tablist li:nth-child(1).on {background: #bfd45d;}
+#faciTab .tablist li:nth-child(2).on {background: #ffcc25;}
 
 #faciTab .swiper-button-prev {background: none; left: 6.5%; width: auto; height: auto; color: #1d1d1d; font-family: 'Chosunilbo_myungjo';}
 #faciTab .swiper-button-next {background: none; right: 6.5%; width: auto; height: auto; color: #1d1d1d; font-family: 'Chosunilbo_myungjo';}
@@ -162,7 +162,7 @@
 
 
 /* map */
-#map {position: relative; padding-top: 300px; height: 1042px;}
+#map {position: relative; padding-top: 300px; height: 54vw; min-height: 960px;}
 
 #map .sub1_tit {margin-top: -200px; padding-top: 0; margin-bottom: 0;}
 #map .sub1_tit p {margin-bottom: 160px;}

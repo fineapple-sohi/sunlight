@@ -43,4 +43,16 @@ $(document).ready(function(){
         });
     });
 
+
+
+    // var btnVal = location.hash;
+
+    // if($('#facility').length) var facilHei = $('#facility').offset().top;
+    // console.log(facilHei);
+
+    // if(btnVal == '#facility1' || '#facility2') {
+    //     $('html, body').animate({scrollTop: facilHei}, 200);
+    // }
+
+
 });
