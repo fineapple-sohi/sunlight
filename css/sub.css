@@ -252,6 +252,8 @@
 .sub04 .half_ul li ul li {line-height: 1.6;}
 .sub04 .half_ul li ul li strong {display: inline-block; margin-bottom: 0.4em;}
 .sub04 .half_ul li ul li + li {margin-top: 1.6em;}
+.sub04 .half_ul .depth3 {padding: 1em 0.8em;}
+
 
 .sub04 .cnt2 .half_ul > li + li {color: #555;}
 .sub04 .cnt2 .half_ul > li + li strong {font-weight: normal; color: #000;}
