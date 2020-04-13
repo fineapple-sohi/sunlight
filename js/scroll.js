@@ -1,5 +1,27 @@
 $(document).ready(function(){
 
+    /* sub tab */
+    var $tabList = $('.sub_tap .tablist .tab');
+    var $tabCnt = $('.sub_tap .tabcnt .tabpanel');
+
+    $tabList.eq(0).addClass('on');
+    $tabCnt.eq(0).addClass('active').siblings().removeClass('active');
+
+    $tabList.on('click', function(){
+        var tabbidx = $(this).index();
+
+        $(this).addClass('on').siblings().removeClass('on');
+        $(this).parent('.tablist').next().children().eq(tabbidx).addClass('active').siblings().removeClass('active');
+
+        for (step = 0; step < idx; step++) {
+            ost = sect.eq(step).offset().top;
+            sectTop[step] = ost;
+        }
+    });
+
+
+
+
     /*scroll event */
     var $header = $('#header');
     var lastScrollTop = 0; 
@@ -7,12 +29,13 @@ $(document).ready(function(){
     var didScroll; 
 
 	var sect = $('#main .sect');
-	var step;
+    var step;
+    var ost;
 	var idx = sect.length;
     var sectTop = new Array();
 
 	for (step = 0; step < idx; step++) {
-		var ost = sect.eq(step).offset().top;
+		ost = sect.eq(step).offset().top;
 		sectTop.push(ost);
     }
 
@@ -23,19 +46,10 @@ $(document).ready(function(){
         var $set3 = $('#special').offset().top;
     }
 
+
+
+    var st;
     
-	
-	//스크롤을 할때마다 배열들안의 값들을 체크합니다.
-	function chkSct(st){
-		for (i = 0; i < idx; i++){
-			if(st + 120 > sectTop[i]){
-				$('#lnb li').eq(i).addClass('on').siblings().removeClass('on');
-
-			} //조검문 끝
-		} // 반복문 끝
-	}//chkSct 끝
-	
-
     $(window).scroll(function(e){ 
         didScroll = true;
     }); 
@@ -49,7 +63,7 @@ $(document).ready(function(){
     }, 250);
 
     function hasScrolled() {
-        var st = $(this).scrollTop();
+        st = $(this).scrollTop();
         if(Math.abs(lastScrollTop - st) <= delta) 
             return;
         
@@ -80,12 +94,49 @@ $(document).ready(function(){
 
 
         chkSct(st);
-        
+
         lastScrollTop = st;
 
     }
  
     $(window).scroll();
+
+
+
+	
+	//스크롤을 할때마다 배열들안의 값들을 체크합니다.
+	function chkSct(st){
+		for (i = 0; i < idx; i++){
+			if(st + 400 > sectTop[i]){
+				$('#lnb li').eq(i).addClass('on').siblings().removeClass('on');
+				// $('#main .sect').eq(i).children('.ani-on').addClass('on').siblings().removeClass('on');
+			} //조검문 끝
+        } // 반복문 끝
+        console.log(sectTop);
+    }//chkSct 끝
+    
+
+
+    
+    var controller = new ScrollMagic.Controller();
+    var txtline = document.querySelectorAll(".ani-on");
+
+    // create scene for every title
+    for (var i = 0; i < txtline.length; i++) {
+        new ScrollMagic.Scene({
+            triggerElement: txtline[i],
+            triggerHook: "onStart",
+            offset:-300
+        })
+        .setClassToggle(txtline[i], "on")
+        .addTo(controller);
+    }
+
+
+
+
+
+
     
 });
 

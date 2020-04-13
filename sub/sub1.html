@@ -27,6 +27,13 @@
     <script src="../js/main.js"></script>
     <script src="../js/sub.js"></script>
     <script src="../js/scroll.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+
+
 </head>
 
 <body>
@@ -68,17 +75,17 @@
         <div class="area">
             <div id="lnb" class="fc_w">
                 <ul>
-                    <li><a href="#greeting">인사말</a></li>
-                    <li><a href="#teacher">전문가소개</a></li>
-                    <li><a href="#facility">둘러보기</a></li>
-                    <li><a href="#map">오시는길</a></li>
+                    <li id="high1"><a href="#greeting">인사말</a></li>
+                    <li id="high2"><a href="#teacher">전문가소개</a></li>
+                    <li id="high3"><a href="#facility">둘러보기</a></li>
+                    <li id="high4"><a href="#map">오시는길</a></li>
                 </ul>
             </div>
             <!-- //lnb -->
 
-            <section id="subTit" class="tc">
-                <span><strong>해</strong>처럼 <strong>빛</strong>나게<em>!</em></span>
-                <h2>해빛아동발달센터 소개</h2>
+            <section id="subTit" class="tc waypoint">
+                <span class="anim fade-in-up-short"><strong>해</strong>처럼 <strong>빛</strong>나게<em>!</em></span>
+                <h2 class="anim fade-in-up-short delay-300">해빛아동발달센터 소개</h2>
                 <img class="deco deco1" src="images/sub1_titdeco1.png" alt="">
                 <img class="deco deco2" src="images/sub1_titdeco2.png" alt="">
             </section>
@@ -94,7 +101,7 @@
             <!-- //topLnb -->
 
             <section id="greeting" class="sect">
-                <div class="sub1_area clear waypoint">
+                <div class="sub1_area clear ani-on">
                     <div class="sub1_tit ye tc">
                         <h3>해빛 인사말</h3>
                         <p>아이들이 마음껏 자신을 표현할 수 있는<br>편안한 공간이 되기를 &middot;&middot;&middot;</p>
@@ -143,7 +150,7 @@
             <!-- //greeting -->
 
             <section id="teacher" class="sect">
-                <div class="sub1_area waypoint">
+                <div class="sub1_area ani-on">
                     <div class="sub1_tit gr tc">
                         <h3>해빛 전문가 소개</h3>
                         <p>우리아이, 아무에게나 맡길 수 없죠<em>!</em></p>
@@ -775,7 +782,7 @@
             <!-- //teacher -->
 
             <section id="facility" class="sect mb30">
-                <div class="sub1_area waypoint">
+                <div class="sub1_area ani-on">
                     <div class="sub1_tit pi tc">
                         <h3>해빛 시설보기</h3>
                         <p>‘청결’과 ‘안전’을 준수하는 편안한 해빛 시설에서<br>아이들과 함께 꿈을 그려나갑니다<em>!</em></p>
@@ -854,7 +861,7 @@
             </section>
             <!-- //facility -->
              
-            <section id="map" class="sect waypoint">
+            <section id="map" class="sect ani-on">
                 <div class="sub1_tit ye tc">
                     <p>든든한 해빛과 함께<br>안전한 동행</p>
                     <h3>해빛 오시는<span>길</span></h3>

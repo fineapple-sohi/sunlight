@@ -1,20 +1,5 @@
 $(document).ready(function(){
 
-    /* tab */
-    var $tabList = $('.sub_tap .tablist .tab');
-    var $tabCnt = $('.sub_tap .tabcnt .tabpanel');
-
-    $tabList.eq(0).addClass('on');
-    $tabCnt.eq(0).addClass('active').siblings().removeClass('active');
-
-    $tabList.on('click', function(){
-        var tabbidx = $(this).index();
-
-        $(this).addClass('on').siblings().removeClass('on');
-        $(this).parent('.tablist').next().children().eq(tabbidx).addClass('active').siblings().removeClass('active');
-
-    });
-
 
     /* interior slide */
     var interiorSwiper1 = new Swiper('.interiorView1', {
@@ -69,7 +54,7 @@ $(document).ready(function(){
 
 
 
-    /* lnb_list */
+    /* sub2,3,4,5 lnb tab */
     var $lnbList = $('#topLnb .lnb_list li');
     var $lnbCnt = $('.lnb_cnt article');
 
@@ -83,6 +68,8 @@ $(document).ready(function(){
         $lnbCnt.eq(lnbidx).show().siblings().hide();
         
     });
+
+
 
 
 
