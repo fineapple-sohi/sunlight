@@ -126,10 +126,11 @@
 #teachTab .tablist li.on {color: #181818;}
 
 #teachTab .tabpanel > ul:after, #teachTab .tabpanel > ul > li:after {content: ''; display: block; clear: both;}
-#teachTab .tabpanel > ul > li {float: left; width: 50%; height: 620px; text-align: left;}
-#teachTab #tabpanel12 > ul > li {height: 400px;}
+#teachTab .tabpanel > ul > li {float: left; width: 50%; height: 740px; text-align: left;}
+#teachTab #tabpanel12 > ul > li {height: 500px;}
 #teachTab #tabpanel13 > ul > li {height: 800px;}
-#teachTab #tabpanel14 > ul > li {height: 460px;} 
+#teachTab #tabpanel14 > ul > li {height: 560px;} 
+#teachTab #tabpanel18 > ul > li {height: 800px;} 
 
 #teachTab .tabpanel .profile, #teachTab .tabpanel .history {float: left;}
 #teachTab .tabpanel .profile {width: 34%; margin-right: 2%; text-align: center;}
